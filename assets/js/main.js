@@ -67,6 +67,14 @@ $('.filterr').on('click', function() {
   $('.portfolio-menu ul li').removeClass("active");
   $(this).addClass("active");
 });
+const toTop = document.querySelector(".to-top");
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active-progress");
+  }else{
+    toTop.classList.remove("active-progress");
+  }
+});
 
 $('.single-clients-list').owlCarousel({
   loop:true,
@@ -78,11 +86,11 @@ $('.single-clients-list').owlCarousel({
       },
       768:{
           items:2,
-          margin:30,
+          margin:35,
       },
       1000:{
           items:2,
-          margin:10,
+          margin:25,
       }
   }
 });
