@@ -1,0 +1,190 @@
+/* /navigation banner area start/ */
+.nav-banner-area {
+  margin-top: 70px;
+  padding: 90px 0px;
+  text-align: center;
+}
+.nav-banner {
+  background: #8490ff;
+  color: #fff;
+}
+.nav-inner h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.8;
+  font-family: "Poppins",sans-serif;
+  letter-spacing: 2px;
+}
+.nav-inner-bottom a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Poppins",sans-serif;
+}
+.nav-inner-bottom span {
+  padding: 0px 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* /navigation banner area ends/ */
+
+.aboutme{
+  padding: 120px 0px;
+}
+.aboutme-text{
+  padding-top: 60px;
+}
+
+.skills {
+  position: relative;
+  padding: 10px 0px;
+}
+.skill-bar h3 {
+  padding-top: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.skill-bar .container {
+  padding: 0;
+}
+.single-skill-bar p {
+  text-align: end;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.skills::before {
+  position: absolute;
+  border: 2px solid #eee;
+  content: '';
+  width: 100%;
+  height: 13px;
+  background: #dbd6d6;
+  border-radius: 10px;
+}
+.skills::after {
+  position: absolute;
+  content: '';
+  height: 9px;
+  background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  width: 0;
+  left: 3px;
+  border-radius: 10px;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  bottom: -1px;
+}
+/* /skill progress css start/ */
+.single-skill-bar .effects::after{
+  animation-name: effects;
+}
+@keyframes effects{
+  to{
+    width: 85%;
+  }
+}
+.single-skill-bar .photoshop::after{
+  animation-name: photoshop;
+}
+@keyframes photoshop{
+  to{
+    width: 90%;
+  }
+}
+.single-skill-bar .illustrator::after{
+  animation-name: illustrator;
+}
+@keyframes illustrator{
+  to{
+    width: 70%;
+  }
+}
+.single-skill-bar .sublime::after{
+  animation-name: sublime;
+}
+@keyframes sublime{
+  to{
+    width: 95%;
+  }
+}
+.single-skill-bar .sketch::after{
+  animation-name: sketch;
+}
+@keyframes sketch{
+  to{
+    width: 85%;
+  }
+}
+/* /skill progress css end/ */
+
+/* /Qualification area strat/ */
+
+
+.qualification {
+  padding-bottom: 120px;
+}
+.qualification-heading {
+  padding-bottom: 70px;
+}
+.qualification-heading h3 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #222;
+}
+.qualification-heading p {
+  padding-bottom: 0px;
+  font-size: 14px;
+}
+.qualification-list ul li {
+  list-style: none;
+  position: relative;
+  margin: 0 auto;
+  width: 2px;
+  background-color: #f9f9ff;
+  padding-bottom: 40px;
+}
+.qualification-list ul li::before{
+  position: absolute;
+  content: '';
+  background: #8490ff;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border: 5px solid #eee;
+  border-radius: 50%;
+}
+.list-content {
+  position: relative;
+  width: 360px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+}
+.list-content h4{
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+.list-content p {
+  color: #777;
+  margin-bottom: 8px;
+}
+.list-content p span {
+  color: #222;
+  font-weight: bolder;
+}
+.qualification-list ul li:nth-child(odd)  .list-content{
+  left: 50px;
+}
+.qualification-list ul li:nth-child(even)  .list-content{
+  left: -410px;
+}
+/* Qualification area ends */
