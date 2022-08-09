@@ -8,6 +8,7 @@
 html{
 	padding: 0;
 	margin: 0;
+  scroll-behavior: smooth;
 }
 body{
   font-family: "Poppins", sans-serif;
@@ -35,6 +36,38 @@ a:hover{
   letter-spacing: 2px;
   font-weight: 600;
 }
+
+/* back to top start */
+
+.progress-wrap.active-progress{
+  visibility: visible;
+  opacity: 1;
+}
+.progress-wrap {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #f4bebe;
+  z-index: 9999;
+  border: 3px solid #e67979;
+  visibility: hidden;
+  opacity: 0;
+}
+.progress-wrap a i {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+
+/* back to top ends */
+
 /* header area css */
 
 .fixed {
@@ -241,6 +274,7 @@ a:hover{
 }
 .service-heading{
   text-align: center;
+  margin-bottom: 50px;
 }
 .service-heading p{
   color: #000;
@@ -260,10 +294,6 @@ a:hover{
   box-shadow: var(--box-shadow);
   margin-bottom: 20px;
 }
-/* .service-box{
-  text-align: center;
-  margin-top: 60px;
-} */
 .service-box-icon{
   font-size: 36px;
   transition: .3s all ease;
@@ -289,6 +319,7 @@ a:hover{
   margin-left: auto;
   margin-right: auto;
   color: #777;
+  padding: 10px;
 }
 /* services area css end */
 
@@ -297,8 +328,9 @@ a:hover{
 	padding:60px 0px;
 	background: linear-gradient(0deg, rgb(132, 144, 255) 0%, rgb(98, 189, 252) 100%);
 }
-
-
+.single-count-box p {
+  margin-bottom: 0;
+}
 .single-count-box {
   text-align: center;
   color: #fff;
@@ -404,6 +436,7 @@ a:hover{
   font-weight: 700;
   position: relative;
   cursor: pointer;
+  letter-spacing: 3px;
 }
 .portfolio-menu ul li:hover::after {
   transform: scaleX(1);
@@ -429,6 +462,10 @@ a:hover{
 .portfolio-item-list {
   margin-top: 50px;
 }
+.p-inner h4 {
+  font-size: 17px;
+  letter-spacing: 2px;
+}
 /* portfolio area ends  */
 
 /* Clients area starts */
@@ -444,6 +481,7 @@ a:hover{
   padding: 25px 30px 12px 30px;
   transition: .3s all ease 0s;
   position: relative;
+  margin-bottom: 10px;
 }
 .single-clients-item:hover{
   cursor: pointer;
@@ -466,12 +504,17 @@ a:hover{
   font-family: "Poppins",sans-serif;
   transition: .3s all ease;
 }
-.right-area p{
+.right-area p {
   color: #777;
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 10px;
   font-family: "Poppins",sans-serif;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 .single-clients-list.owl-carousel .owl-nav{
   display: block;
@@ -486,7 +529,7 @@ a:hover{
   margin-bottom: 10px;
 }
 .client-area-heading {
-  padding: 0px 15px 70px 15px;
+  padding: 0px 15px 20px 15px;
 }
 .client-area-heading p {
   color: #777;
@@ -604,7 +647,7 @@ a:hover{
  .author-name {
   display: inline-flex;
   font-size: 14px;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .post-author {
   display: flex;
@@ -663,8 +706,7 @@ a:hover{
 .post-bottom p{
   color: #000;
   margin-top: 15px;
-  margin-bottom: 45px;
-  text-align: left;
+  margin-bottom: 0;
 }
 .single-post-box .post-img {
   overflow: hidden;
@@ -690,8 +732,7 @@ a:hover{
 .post-contents {
   background: #fff;
   box-shadow: var(--box-shadow);
-  padding: 5px 15px;
-  margin-top: 10px;
+  padding: 20px;
 }
 
  /* post area css ends */
