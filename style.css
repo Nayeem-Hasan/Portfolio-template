@@ -173,7 +173,7 @@ a:hover{
   visibility: visible;
   z-index: 99;
 }
-.navbar ul li .dropdown li .dropdown-2{
+.navbar ul li .dropdown li .dropdown-2.dd_menu{
   background: #eee;
   width: 140px;
   padding-left: 0px;
@@ -185,7 +185,7 @@ a:hover{
   box-shadow: var(--box-shadow);
   left: 101%;
 }
-.navbar ul li .dropdown li:hover .dropdown-2{
+.navbar ul li a.dd_menu_a.active + .dropdown-2.dd_menu{
   display: block;
 }
 .mobile-nav, .nav-bar{
@@ -346,7 +346,7 @@ a:hover{
 /* portfolio-area css start */
 
 .portfolio-area{
-  padding: 80px 0px;
+  padding: 60px 0px;
 }
 .p-inner{
   text-align: center;
@@ -414,7 +414,7 @@ a:hover{
   color: #7777;
 }
 .portfolio-heading {
-  padding: 0px 15px 15px 15px;
+  padding: 0px 15px 20px 15px;
 }
 .portfolio-title {
   font-size: 36px;
@@ -423,26 +423,20 @@ a:hover{
 }
 .portfolio-heading p {
   color: #7777;
-	margin-bottom:0px;
 }
 .portfolio-menu ul {
   display: flex;
   justify-content: center;
-  margin-bottom: 0;
-  padding-left: 0;
 }
 .portfolio-menu ul li {
   list-style: none;
-  padding: 8px 15px;
+  padding: 18px 15px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
   position: relative;
   cursor: pointer;
   letter-spacing: 3px;
-}
-.portfolio-item-lists .container {
-  margin-top: -30px;
 }
 .portfolio-menu ul li:hover::after {
   transform: scaleX(1);
