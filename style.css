@@ -653,6 +653,7 @@ a:hover{
  .author-name {
   display: inline-flex;
   font-size: 14px;
+  margin-bottom:0;
   padding-left: 5px;
 }
 .post-author {
@@ -664,6 +665,7 @@ a:hover{
 }
 .right {
   display: flex;
+  align-items: center;
 }
 .right p {
   padding: 0;
@@ -690,8 +692,10 @@ a:hover{
   font-size: 14px;
   color: #000;
   line-height: 1.8;
-  padding: 0 10px;
+  padding: 0px 5px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .post-react i, .post i {
   padding-right: 5px;
