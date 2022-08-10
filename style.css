@@ -671,6 +671,8 @@ a:hover{
   padding: 0;
   margin: 0;
   color: #777;
+  display: flex;
+  align-items: center;
 }
 .post-heading h3 {
   font-size: 36px;
@@ -689,10 +691,10 @@ a:hover{
   text-align: center;
 }
 .post-react, .post-cmnt {
-  font-size: 14px;
+  font-size: 10px;
   color: #000;
   line-height: 1.8;
-  padding: 0px 5px;
+  padding: 0 4px;
   text-decoration: none;
   display: flex;
   align-items: center;
